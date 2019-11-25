@@ -1,0 +1,6 @@
+all: server.c
+	gcc server123.c -o write_server123
+	gcc server123.c -D READ_SERVER -o read_server123
+
+clean:
+	rm -f read_server write_server
